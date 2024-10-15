@@ -27,12 +27,19 @@
 }
 
 /* Expert Card Image Styling */
+.expert-card {
+    display: flex; /* Menggunakan flexbox untuk memposisikan gambar dan konten */
+    flex-direction: column; /* Mengatur arah elemen anak (gambar dan teks) menjadi kolom */
+    align-items: center; /* Memusatkan semua elemen di dalam kartu */
+    justify-content: center; /* Memastikan konten terpusat di dalam kartu */
+}
+
 .expert-card img {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-    object-fit: cover;
-    border-radius: 50%;
+    width: 100%; /* Memastikan gambar mengisi lebar wadah */
+    height: 200px; /* Mengatur tinggi untuk membuat gambar kotak */
+    object-fit: cover; /* Memastikan gambar tetap terisi tanpa mengubah rasio aspek */
+    border-radius: 0; /* Menghilangkan sudut bulat */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
 }
 
 /* Smooth hover transition for cards */
@@ -40,9 +47,10 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.expert-card:hover {
-    transform: scale(1.05);
+.expert-card img:hover {
+    transform: scale(1.05); /* Gambar akan sedikit membesar saat hover */
 }
+
 
 /* Service Card Styling */
 .service-card {

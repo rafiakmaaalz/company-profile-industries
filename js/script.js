@@ -38,6 +38,7 @@ const resultMessage = document.getElementById('resultMessage');
 
 // Check if there is stored data in localStorage
 window.addEventListener('load', () => {
+    // Hanya ambil data dari localStorage jika tidak ada data yang di-submit
     const storedName = localStorage.getItem('name');
     const storedEmail = localStorage.getItem('email');
     const storedMessage = localStorage.getItem('message');
@@ -77,6 +78,11 @@ contactForm.addEventListener('submit', (e) => {
 
         // Clear the form
         contactForm.reset();
+
+        // Clear localStorage after showing results
+        localStorage.removeItem('name');
+        localStorage.removeItem('email');
+        localStorage.removeItem('message');
     } else {
         formMessage.classList.remove('hidden');
         formMessage.textContent = 'Please fill in all fields.';
@@ -85,5 +91,6 @@ contactForm.addEventListener('submit', (e) => {
         contactResults.classList.add('hidden');
     }
 });
+
 
 
