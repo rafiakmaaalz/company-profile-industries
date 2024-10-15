@@ -1,0 +1,101 @@
+/* Hero Section Styling */
+.hero-section {
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/random/1920x1080?business');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Text and Button Animation */
+.hero-section .text-center h1, .hero-section p {
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.hero-section .text-center a {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Image Animation */
+.hero-section img {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-section img {
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.expert-card img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 400px;
+    object-fit: cover; /* Memastikan gambar menyesuaikan dengan kotak tanpa distorsi */
+    border-radius: 50%; /* Agar tetap berbentuk lingkaran */
+}
+
+/* Service Card Styling */
+.service-card {
+    background-color: #2d3748;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Menu Styling */
+#mobile-menu {
+    background-color: #1a202c;
+}
+
+/* Add this CSS for the animations */
+.section-animated {
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Start from below */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+}
+
+.section-animated.visible {
+    opacity: 1; /* Make it visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 0 20px;
+    }
+    .hero-section .text-center {
+        text-align: center;
+    }
+
+    .contact-section {
+        flex-direction: column; /* Stack elements on smaller screens */
+    }
+
+    /* Navbar */
+    nav {
+        padding: 10px;
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+

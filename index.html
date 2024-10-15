@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu Industries</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 shadow-lg fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold tracking-widest">Jujutsu Industries</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-blue-500">About</a>
+                <a href="#services" class="hover:text-blue-500">Services</a>
+                <a href="#experts" class="hover:text-blue-500">Master</a>
+                <a href="#contact" class="hover:text-blue-500">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 space-y-2">
+            <a href="#about" class="hover:text-blue-500">About</a>
+            <a href="#services" class="hover:text-blue-500">Services</a>
+            <a href="#experts" class="hover:text-blue-500">Master</a>
+            <a href="#contact" class="hover:text-blue-500">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section relative section-animated" >
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center h-full relative z-10">
+            <div class="text-white text-center md:text-left md:w-1/2">
+                <h1 class="text-6xl font-extrabold mb-4">Jujutsu Industries</h1>
+                <p class="text-xl mb-6">Empowering sorcerers to protect humanity from curses and darkness.</p>
+                <a href="#services" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition transform hover:scale-105">Explore Our Training Programs</a>
+            </div>
+            <div class="mt-8 md:mt-0 md:w-1/2 flex justify-center">
+                <img src="assets/jjk2.jpg" alt="Profile Image" class="w-64 h-64 rounded-full border-4 border-blue-600 shadow-lg hover:scale-105 transition-transform duration-300">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-900 text-white section-animated">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-10">About Us</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="assets/jjk1.jpg" alt="About Us Image" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h3 class="text-2xl font-semibold mb-4">Who We Are</h3>
+                    <p class="mb-4">
+                        Jujutsu Industries is a prestigious institution dedicated to training individuals in the art of jujutsu, empowering them to combat curses and supernatural threats. Our curriculum combines rigorous physical training with deep philosophical teachings on harnessing energy and understanding the essence of curses.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                    <p class="mb-4">
+                        Our mission is to cultivate skilled sorcerers who can protect society from malevolent curses and ensure harmony. We emphasize teamwork, strategic thinking, and the ethical use of power to combat darkness and save lives.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-4">Our Values</h3>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Bravery</li>
+                        <li>Compassion</li>
+                        <li>Integrity</li>
+                        <li>Wisdom</li>
+                        <li>Strength</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-800 section-animated">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Training Programs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="service-card">
+                    <div class="icon bg-blue-600 p-4 rounded-full mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v8m0 4v4m-4-8H4m8 0h8" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Jujutsu Combat Training</h3>
+                    <p class="text-gray-400">Master the fundamentals of jujutsu to confront and exorcise curses effectively.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon bg-green-600 p-4 rounded-full mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12v6m0-6H6m6 0h6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Curse Energy Manipulation</h3>
+                    <p class="text-gray-400">Learn to harness and control cursed energy for defensive and offensive techniques.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon bg-red-600 p-4 rounded-full mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17l4-4m0 0l4-4m-4 4v6m-4-4l4-4m0 0L8 7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Strategic Combat Tactics</h3>
+                    <p class="text-gray-400">Develop strategies to outmaneuver and defeat cursed spirits in battle.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon bg-yellow-600 p-4 rounded-full mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12v6m0-6H6m6 0h6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Cursed Spirit Identification</h3>
+                    <p class="text-gray-400">Training to recognize and understand various types of cursed spirits.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon bg-indigo-600 p-4 rounded-full mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M13 5v6h-4V5m8 2h.01M6 10h.01M6 17v.01M18 13v.01M13 18h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Field Training</h3>
+                    <p class="text-gray-400">Practical training sessions in the field to confront real cursed threats.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon bg-pink-600 p-4 rounded-full mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17l4-4m0 0l4-4m-4 4v6m-4-4l4-4m0 0L8 7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Cursed Energy Healing</h3>
+                    <p class="text-gray-400">Techniques to heal oneself and others using cursed energy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Experts Section -->
+    <section id="experts" class="py-20 bg-gray-900 section-animated">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Master</h2>
+            <p class="text-center text-gray-400 mb-8">Meet our experts are here to guide you through the world of Jujutsu.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Expert Card 1 -->
+                <div class="expert-card text-center bg-gray-800 rounded-lg p-6 transition-transform duration-300 hover:scale-105 shadow-lg">
+                    <img src="assets/gojo.jpeg" alt="Gojo Satoru - The strongest sorcerer" class="rounded-full w-40 h-40 mx-auto mb-4 border-4 border-blue-600">
+                    <h3 class="text-xl font-semibold">Gojo Satoru</h3>
+                    <p class="text-gray-400 mb-2">The strongest sorcerer</p>
+                    <p class="text-gray-500">Specializes in advanced jujutsu techniques and unlocking potential.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-500 hover:text-blue-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-500 hover:text-blue-300 mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-500 hover:text-blue-300"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Expert Card 2 -->
+                <div class="expert-card text-center bg-gray-800 rounded-lg p-6 transition-transform duration-300 hover:scale-105 shadow-lg">
+                    <img src="assets/sukuna.jpeg" alt="Ryomen Sukuna - King of Curses" class="rounded-full w-40 h-40 mx-auto mb-4 border-4 border-orange-600">
+                    <h3 class="text-xl font-semibold">Ryomen Sukuna</h3>
+                    <p class="text-gray-400 mb-2">King of Curses</p>
+                    <p class="text-gray-500">A legendary figure with unmatched cursed power, feared by all.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-500 hover:text-blue-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-500 hover:text-blue-300 mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-500 hover:text-blue-300"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <!-- Expert Card 3 -->
+                <div class="expert-card text-center bg-gray-800 rounded-lg p-6 transition-transform duration-300 hover:scale-105 shadow-lg">
+                    <img src="assets/yuta.jpeg" alt="Yuta Okkotsu - Prodigious sorcerer" class="rounded-full w-40 h-40 mx-auto mb-4 border-4 border-purple-600">
+                    <h3 class="text-xl font-semibold">Yuta Okkotsu</h3>
+                    <p class="text-gray-400 mb-2">Prodigious sorcerer</p>
+                    <p class="text-gray-500">With unparalleled cursed energy control, he leads by example.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-500 hover:text-blue-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-500 hover:text-blue-300 mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-500 hover:text-blue-300"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Expert Card 4 -->
+                <div class="expert-card text-center bg-gray-800 rounded-lg p-6 transition-transform duration-300 hover:scale-105 shadow-lg">
+                    <img src="assets/yuji.jpeg" alt="Itadori Yuji - Passionate sorcerer" class="rounded-full w-40 h-40 mx-auto mb-4 border-4 border-red-600">
+                    <h3 class="text-xl font-semibold">Itadori Yuji</h3>
+                    <p class="text-gray-400 mb-2">Passionate sorcerer</p>
+                    <p class="text-gray-500">Dedicated to protecting humanity and defeating curses.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-500 hover:text-blue-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-500 hover:text-blue-300 mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-500 hover:text-blue-300"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Expert Card 5 -->
+                <div class="expert-card text-center bg-gray-800 rounded-lg p-6 transition-transform duration-300 hover:scale-105 shadow-lg">
+                    <img src="assets/geto.png" alt="Geto Suguru - Cursed energy master" class="rounded-full w-40 h-40 mx-auto mb-4 border-4 border-green-600">
+                    <h3 class="text-xl font-semibold">Geto Suguru</h3>
+                    <p class="text-gray-400 mb-2">Cursed energy master</p>
+                    <p class="text-gray-500">Known for strategic mind and deep understanding of curses.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-500 hover:text-blue-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-500 hover:text-blue-300 mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-500 hover:text-blue-300"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Contact Section -->
+   <section id="contact" class="py-20 bg-gray-900 section-animated">
+        <div class="container mx-auto flex flex-col md:flex-row">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold text-center mb-10 text-white">Contact Us</h2>
+                <form id="contactForm" class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-lg">
+                    <div class="mb-4">
+                        <label for="name" class="block mb-2 text-gray-300">Name</label>
+                        <input type="text" id="name" class="w-full p-3 rounded bg-gray-700 text-gray-300" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block mb-2 text-gray-300">Email</label>
+                        <input type="email" id="email" class="w-full p-3 rounded bg-gray-700 text-gray-300" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block mb-2 text-gray-300">Message</label>
+                        <textarea id="message" class="w-full p-3 rounded bg-gray-700 text-gray-300" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition transform hover:scale-105">Send Message</button>
+                    <p id="formMessage" class="mt-4 text-green-400 hidden">Message Sent!</p>
+                </form>
+
+                <!-- Display Contact Form Results -->
+                <div id="contactResults" class="mt-10 max-w-2xl mx-auto p-8 bg-gray-800 rounded-lg hidden">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Your Submitted Information:</h3>
+                    <p class="text-gray-300"><strong>Name:</strong> <span id="resultName"></span></p>
+                    <p class="text-gray-300"><strong>Email:</strong> <span id="resultEmail"></span></p>
+                    <p class="text-gray-300"><strong>Message:</strong> <span id="resultMessage"></span></p>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 md:pl-10 mt-10 md:mt-0">
+                <h3 class="text-2xl font-semibold mb-4 text-white">Our Location</h3>
+                <p class="mb-4 text-gray-300">123 Jujutsu St, Sorcerer HQ</p>
+                <p class="mb-4 text-gray-300">Tokyo, Japan, 100-0001</p>
+                <p class="mb-4 text-gray-300">Phone: (123) 456-7890</p>
+                <p class="mb-4 text-gray-300">Email: info@jujutsuindustries.com</p>
+                <h3 class="text-2xl font-semibold mb-4 text-white">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-blue-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-blue-400"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Jujutsu Industries. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
