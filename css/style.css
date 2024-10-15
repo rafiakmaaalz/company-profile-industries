@@ -9,8 +9,6 @@
     justify-content: center;
     position: relative;
 }
-
-/* Text and Button Animation */
 .hero-section .text-center h1, .hero-section p {
     animation: fadeInUp 1.2s ease-in-out;
 }
@@ -28,13 +26,22 @@
     transition: transform 0.3s ease; /* Smooth scaling on hover */
 }
 
+/* Expert Card Image Styling */
 .expert-card img {
     width: 100%;
     height: auto;
     max-width: 200px;
-    max-height: 400px;
-    object-fit: cover; /* Memastikan gambar menyesuaikan dengan kotak tanpa distorsi */
-    border-radius: 50%; /* Agar tetap berbentuk lingkaran */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Smooth hover transition for cards */
+.expert-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.expert-card:hover {
+    transform: scale(1.05);
 }
 
 /* Service Card Styling */
@@ -56,18 +63,17 @@
     background-color: #1a202c;
 }
 
-/* Add this CSS for the animations */
+/* Animation for visibility */
 .section-animated {
-    opacity: 0; /* Start hidden */
-    transform: translateY(50px); /* Start from below */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .section-animated.visible {
-    opacity: 1; /* Make it visible */
-    transform: translateY(0); /* Move to original position */
+    opacity: 1;
+    transform: translateY(0);
 }
-
 
 /* Responsive Styling */
 @media (max-width: 768px) {
